@@ -30,7 +30,7 @@ def show_todos(q: Q):
 
     # Create a sample list if we don't have any.
     if todos is None:
-        q.user.todos = todos = [TodoItem('Do this'), TodoItem('Do that'), TodoItem('Do something else')]
+        q.user.todos = todos = [TodoItem('Exercise'), TodoItem('Dispose rubbish'), TodoItem('Do homeworks')]
 
     # If the user checked/unchecked an item, update our list.
     for todo in todos:
